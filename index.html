@@ -151,11 +151,11 @@
             <p>I've completed Harvard University's CS50 course and built more than 50 projects, WordPress sites and custom platforms alike.</p>
           </div>
 
-          <!-- CV: put your file at assets/cv/Prabath-Sandeepa-CV.pdf -->
-          <a class="btn" href="assets/cv/Prabath-Sandeepa-CV.pdf" download="Prabath-Sandeepa-CV.pdf">
+          <!-- CV: opens CV Available Soon Modal -->
+          <button class="btn" id="cvBtn" type="button" aria-haspopup="dialog" aria-controls="cvDialog">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0l-5-5m5 5l5-5M5 20h14"/></svg>
             <span>Download my CV</span>
-          </a>
+          </button>
         </div>
       </section>
 
@@ -604,6 +604,41 @@
           <p class="dlg__code">Verification code: <span id="certCode"></span></p>
         </div>
         <a class="dlg__verify" href="https://open.uom.lk/verify" target="_blank" rel="noopener noreferrer">Verify at open.uom.lk</a>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- CV Notice Modal -->
+  <dialog class="dlg dlg--cv" id="cvDialog" aria-labelledby="cvModalTitle" aria-describedby="cvModalDesc">
+    <div class="dlg__card dlg__card--cv">
+      <button class="dlg__close" id="cvClose" type="button" aria-label="Close">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+
+      <div class="cv-modal">
+        <div class="cv-modal__icon-wrap">
+          <div class="cv-modal__icon-pulse" aria-hidden="true"></div>
+          <div class="cv-modal__icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+              <polyline points="14 2 14 8 20 8"/>
+              <line x1="16" y1="13" x2="8" y2="13"/>
+              <line x1="16" y1="17" x2="8" y2="17"/>
+              <polyline points="10 9 9 9 8 9"/>
+            </svg>
+          </div>
+          <span class="cv-modal__sparkle" aria-hidden="true">✦</span>
+        </div>
+
+        <h3 class="cv-modal__title" id="cvModalTitle">CV Will Be Available Soon</h3>
+        <p class="cv-modal__desc" id="cvModalDesc">
+          I'm currently updating my CV with recent projects, ventures, and technical leadership milestones. It will be available for download very soon!
+        </p>
+
+        <div class="cv-modal__actions">
+          <button class="cv-modal__btn cv-modal__btn--primary" id="cvModalOk" type="button">Got it, thanks!</button>
+          <a class="cv-modal__btn cv-modal__btn--ghost" id="cvModalContact" href="#contact">Get in touch</a>
+        </div>
       </div>
     </div>
   </dialog>

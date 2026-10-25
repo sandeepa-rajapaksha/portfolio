@@ -767,12 +767,15 @@ main > section:first-child { margin-top: 0; }
   gap: .75rem;
   margin-top: 1.5rem;
   padding: .95rem 1.5rem .95rem 1.25rem;
+  border: 0;
   border-radius: 999px;
   background: var(--blue);
   color: #fff;
+  font-family: inherit;
   font-size: 1rem;
   font-weight: 600;
   text-decoration: none;
+  cursor: pointer;
   box-shadow: inset 0 0 0 1.5px rgba(255, 255, 255, .2);
   -webkit-tap-highlight-color: transparent;
   transition: transform .3s var(--ease-out), box-shadow .35s ease;
@@ -1527,6 +1530,150 @@ main > section:first-child { margin-top: 0; }
 }
 
 .dlg__verify:hover { box-shadow: 0 12px 26px -10px var(--blue); }
+
+/* ---------- CV Notice Modal ---------- */
+.dlg--cv {
+  max-width: min(92vw, 25.5rem);
+}
+
+.dlg__card--cv {
+  padding: clamp(1.6rem, 5vw, 2.2rem) clamp(1.2rem, 4vw, 1.75rem);
+  border-radius: 1.5rem;
+  text-align: center;
+  background: var(--bg);
+  box-shadow: 0 0 0 1px var(--line), 0 32px 64px -20px rgba(0, 0, 0, .65), 0 0 50px -15px color-mix(in oklab, var(--blue) 25%, transparent);
+}
+
+.cv-modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cv-modal__icon-wrap {
+  position: relative;
+  display: grid;
+  place-items: center;
+  margin-bottom: 1.1rem;
+}
+
+.cv-modal__icon-pulse {
+  position: absolute;
+  inset: -6px;
+  border-radius: 50%;
+  background: color-mix(in oklab, var(--blue) 30%, transparent);
+  animation: cv-halo 2.4s cubic-bezier(.4, 0, .6, 1) infinite;
+  z-index: 0;
+}
+
+.cv-modal__icon {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  place-items: center;
+  width: 4.25rem;
+  height: 4.25rem;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--blue) 0%, var(--azure) 100%);
+  color: #fff;
+  box-shadow: 0 12px 28px -8px var(--blue);
+}
+
+.cv-modal__icon svg {
+  width: 2rem;
+  height: 2rem;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.cv-modal__sparkle {
+  position: absolute;
+  top: -4px;
+  right: -6px;
+  z-index: 2;
+  font-size: 1.15rem;
+  color: var(--hot);
+  animation: cv-sparkle 1.8s ease-in-out infinite alternate;
+}
+
+@keyframes cv-halo {
+  0%, 100% { transform: scale(1); opacity: .55; }
+  50%      { transform: scale(1.25); opacity: 0; }
+}
+
+@keyframes cv-sparkle {
+  0%   { transform: rotate(0deg) scale(.85) translateY(0); }
+  100% { transform: rotate(20deg) scale(1.2) translateY(-4px); }
+}
+
+.cv-modal__title {
+  margin: 0 0 .5rem;
+  font-size: clamp(1.25rem, 3.2vw, 1.45rem);
+  font-weight: 700;
+  color: var(--ink);
+  line-height: 1.25;
+}
+
+.cv-modal__desc {
+  margin: 0 0 1.5rem;
+  color: var(--muted);
+  font-size: .95rem;
+  line-height: 1.6;
+}
+
+.cv-modal__actions {
+  display: flex;
+  flex-direction: column;
+  gap: .65rem;
+  width: 100%;
+}
+
+.cv-modal__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: .85rem 1.4rem;
+  border-radius: 999px;
+  font-family: inherit;
+  font-size: .95rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform .25s var(--ease-out), box-shadow .25s ease, background-color .2s ease;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.cv-modal__btn--primary {
+  border: 0;
+  background: var(--blue);
+  color: #fff;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .2), 0 10px 24px -8px var(--blue);
+}
+
+.cv-modal__btn--primary:hover {
+  transform: translateY(-2px);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .35), 0 16px 32px -10px var(--blue);
+}
+
+.cv-modal__btn--ghost {
+  border: 1px solid var(--line);
+  background: transparent;
+  color: var(--ink);
+}
+
+.cv-modal__btn--ghost:hover {
+  background: color-mix(in oklab, var(--ink) 6%, transparent);
+  border-color: color-mix(in oklab, var(--azure) 50%, transparent);
+  transform: translateY(-2px);
+}
+
+.cv-modal__btn:active {
+  transform: scale(.98);
+}
 
 /* ---------- 8. Contact ---------- */
 .contact__lead {

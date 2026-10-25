@@ -428,6 +428,38 @@
   }
 
   /* ------------------------------------------------------------------
+     5b. CV notice modal
+  ------------------------------------------------------------------ */
+  var cvDlg = document.getElementById('cvDialog');
+  var cvBtn = document.getElementById('cvBtn');
+
+  if (cvDlg && cvBtn) {
+    var cvClose = document.getElementById('cvClose');
+    var cvOk = document.getElementById('cvModalOk');
+    var cvContact = document.getElementById('cvModalContact');
+
+    var openCvModal = function (e) {
+      if (e) e.preventDefault();
+      root.classList.add('lock');
+      if (typeof cvDlg.showModal === 'function') cvDlg.showModal();
+      else cvDlg.setAttribute('open', '');
+    };
+
+    var closeCvModal = function () {
+      if (typeof cvDlg.close === 'function') cvDlg.close();
+      else cvDlg.removeAttribute('open');
+      root.classList.remove('lock');
+    };
+
+    cvBtn.addEventListener('click', openCvModal);
+    if (cvClose) cvClose.addEventListener('click', closeCvModal);
+    if (cvOk) cvOk.addEventListener('click', closeCvModal);
+    if (cvContact) cvContact.addEventListener('click', closeCvModal);
+    cvDlg.addEventListener('click', function (e) { if (e.target === cvDlg) closeCvModal(); });
+    cvDlg.addEventListener('close', function () { root.classList.remove('lock'); });
+  }
+
+  /* ------------------------------------------------------------------
      6. Scroll extras
   ------------------------------------------------------------------ */
   var progress = document.getElementById('progress');
