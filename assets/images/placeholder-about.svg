@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-label="Portrait placeholder">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="0.6" y2="1">
+      <stop offset="0" stop-color="#1424dd"/>
+      <stop offset="0.6" stop-color="#2987ff"/>
+      <stop offset="1" stop-color="#2e3192"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="1000" fill="url(#g)"/>
+  <circle cx="400" cy="400" r="130" fill="#ffffff" opacity=".92"/>
+  <path d="M130 1000c0-190 120-310 270-310s270 120 270 310z" fill="#ffffff" opacity=".92"/>
+  <text x="400" y="935" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700" letter-spacing="8" fill="#1424dd">PHOTO COMING SOON</text>
+</svg>

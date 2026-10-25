@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+  <title>Prabath Sandeepa — Software Engineer &amp; Entrepreneur</title>
+  <meta name="description" content="Prabath Sandeepa Rajapaksha is a software engineer and entrepreneur from Sri Lanka, Founder &amp; CEO of Fidex Developers and Xenzura Entertainment, and the builder of AvraAPI.">
+  <meta name="color-scheme" content="dark light">
+  <meta name="theme-color" content="#060a2c">
+  <link rel="canonical" href="https://sandeepa.info/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Prabath Sandeepa — Software Engineer &amp; Entrepreneur">
+  <meta property="og:description" content="Founder &amp; CEO of Fidex Developers and Xenzura Entertainment. Builder of AvraAPI.">
+  <meta property="og:url" content="https://sandeepa.info/">
+  <meta name="twitter:card" content="summary">
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/bricolage-grotesque-latin-wdth-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Prabath Sandeepa Rajapaksha",
+    "alternateName": "Prabath Sandeepa",
+    "url": "https://sandeepa.info/",
+    "jobTitle": "Software Engineer and Entrepreneur",
+    "email": "mailto:founder@fidex.lk",
+    "worksFor": { "@type": "Organization", "name": "Fidex Developers (Pvt) Ltd" },
+    "sameAs": [
+      "https://www.linkedin.com/in/prabath-sandeepa",
+      "https://x.com/P_Sandeepa_lk",
+      "https://www.facebook.com/sandeepa.info/",
+      "https://www.instagram.com/sandeepa.info/"
+    ]
+  }
+  </script>
+
+  <!-- Tiny blocking script: applies the saved theme before first paint (no flash). -->
+  <script src="js/theme-init.js"></script>
+  <script src="js/main.js" defer></script>
+</head>
+
+<body>
+  <div class="progress" id="progress" aria-hidden="true"></div>
+
+  <button class="theme" id="themeToggle" type="button" role="switch" aria-checked="true" aria-label="Dark theme">
+    <svg class="theme__hint theme__hint--sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2.5M12 19.5V22M4.2 4.2l1.8 1.8M18 18l1.8 1.8M2 12h2.5M19.5 12H22M4.2 19.8L6 18M18 6l1.8-1.8"/></svg>
+    <svg class="theme__hint theme__hint--moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+    <span class="theme__thumb" aria-hidden="true">
+      <svg class="theme__icon theme__icon--moon" viewBox="0 0 24 24"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+      <svg class="theme__icon theme__icon--sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2.5M12 19.5V22M4.2 4.2l1.8 1.8M18 18l1.8 1.8M2 12h2.5M19.5 12H22M4.2 19.8L6 18M18 6l1.8-1.8"/></svg>
+    </span>
+  </button>
+
+  <div class="page" id="page">
+    <main>
+
+      <!-- ============ 1. HERO ============ -->
+      <section class="hero" id="top">
+        <div class="hero__text">
+          <h1 class="name" aria-label="Prabath Sandeepa">
+            <span class="name__first" aria-hidden="true">Prabath</span>
+            <span class="name__last slam xt" id="slam" aria-hidden="true"><span class="ch"><span class="glyph">S</span></span><span class="ch"><span class="glyph">A</span></span><span class="ch"><span class="glyph">N</span></span><span class="ch"><span class="glyph">D</span></span><span class="ch"><span class="glyph">E</span></span><span class="ch"><span class="glyph">E</span></span><span class="ch"><span class="glyph">P</span></span><span class="ch"><span class="glyph">A</span></span></span>
+          </h1>
+
+          <p class="hero__lead after" style="--d:.05s">Software engineer and entrepreneur building platforms from Sri Lanka.</p>
+          <p class="hero__sub after" style="--d:.2s">Founder &amp; CEO of Fidex Developers and Xenzura Entertainment.</p>
+        </div>
+
+        <!-- Hero Photo: Standalone cutout with ambient glow and smooth bottom feathering -->
+        <figure class="photo photo--hero">
+          <div class="photo__hero-glow" aria-hidden="true"></div>
+          <div class="photo__frame">
+            <img src="assets/images/me-transparent-portfolio-hero.png"
+                 onerror="this.onerror=null;this.src='assets/images/placeholder-hero.svg';this.classList.add('is-placeholder')"
+                 alt="Portrait of Prabath Sandeepa" width="1122" height="1402" fetchpriority="high">
+          </div>
+        </figure>
+      </section>
+
+      <!-- ============ TECH STACK TICKER ============ -->
+      <section class="ticker" aria-label="Technologies and frameworks">
+        <div class="ticker__track">
+          <!-- List 1 -->
+          <div class="ticker__list">
+            <div class="ticker__item" title="PHP"><img class="ticker__logo" src="assets/images/tech-logos/php.svg" alt="PHP" width="44" height="44" loading="lazy"></div>
+            <div class="ticker__item" title="Flutter"><img class="ticker__logo" src="assets/images/tech-logos/flutter.svg" alt="Flutter" width="44" height="44" loading="lazy"></div>
+            <div class="ticker__item" title="Laravel"><img class="ticker__logo" src="assets/images/tech-logos/laravel.svg" alt="Laravel" width="44" height="44" loading="lazy"></div>
+            <div class="ticker__item" title="Node.js"><img class="ticker__logo" src="assets/images/tech-logos/nodejs.svg" alt="Node.js" width="44" height="44" loading="lazy"></div>
+            <div class="ticker__item" title="JavaScript"><img class="ticker__logo" src="assets/images/tech-logos/javascript.svg" alt="JavaScript" width="44" height="44" loading="lazy"></div>
+            <div class="ticker__item" title="Vue.js"><img class="ticker__logo" src="assets/images/tech-logos/vue.svg" alt="Vue.js" width="44" height="44" loading="lazy"></div>
+            <div class="ticker__item" title="Python"><img class="ticker__logo" src="assets/images/tech-logos/python.svg" alt="Python" width="44" height="44" loading="lazy"></div>
+            <div class="ticker__item" title="Tailwind CSS"><img class="ticker__logo" src="assets/images/tech-logos/tailwind.svg" alt="Tailwind CSS" width="44" height="44" loading="lazy"></div>
+            <div class="ticker__item" title="Bootstrap"><img class="ticker__logo" src="assets/images/tech-logos/bootstrap.svg" alt="Bootstrap" width="44" height="44" loading="lazy"></div>
+            <div class="ticker__item" title="Filament"><img class="ticker__logo" src="assets/images/tech-logos/filament.svg" alt="Filament" width="44" height="44" loading="lazy"></div>
+            <div class="ticker__item" title="PostgreSQL"><img class="ticker__logo" src="assets/images/tech-logos/postgresql.svg" alt="PostgreSQL" width="44" height="44" loading="lazy"></div>
+            <div class="ticker__item" title="MySQL"><img class="ticker__logo" src="assets/images/tech-logos/mysql.svg" alt="MySQL" width="44" height="44" loading="lazy"></div>
+            <div class="ticker__item" title="MariaDB"><img class="ticker__logo" src="assets/images/tech-logos/mariadb.svg" alt="MariaDB" width="44" height="44" loading="lazy"></div>
+            <div class="ticker__item" title="MongoDB"><img class="ticker__logo" src="assets/images/tech-logos/mongodb.svg" alt="MongoDB" width="44" height="44" loading="lazy"></div>
+            <div class="ticker__item" title="Oracle DB"><img class="ticker__logo" src="assets/images/tech-logos/oracledb.svg" alt="Oracle DB" width="44" height="44" loading="lazy"></div>
+            <div class="ticker__item" title="HTML5"><img class="ticker__logo" src="assets/images/tech-logos/html5.svg" alt="HTML5" width="44" height="44" loading="lazy"></div>
+            <div class="ticker__item" title="CSS3"><img class="ticker__logo" src="assets/images/tech-logos/css3.svg" alt="CSS3" width="44" height="44" loading="lazy"></div>
+            <div class="ticker__item" title="WordPress"><img class="ticker__logo" src="assets/images/tech-logos/wordpress.svg" alt="WordPress" width="44" height="44" loading="lazy"></div>
+          </div>
+          <!-- List 2 (duplicate for seamless loop) -->
+          <div class="ticker__list" aria-hidden="true">
+            <div class="ticker__item"><img class="ticker__logo" src="assets/images/tech-logos/php.svg" alt="" width="44" height="44" loading="lazy"></div>
+            <div class="ticker__item"><img class="ticker__logo" src="assets/images/tech-logos/flutter.svg" alt="" width="44" height="44" loading="lazy"></div>
+            <div class="ticker__item"><img class="ticker__logo" src="assets/images/tech-logos/laravel.svg" alt="" width="44" height="44" loading="lazy"></div>
+            <div class="ticker__item"><img class="ticker__logo" src="assets/images/tech-logos/nodejs.svg" alt="" width="44" height="44" loading="lazy"></div>
+            <div class="ticker__item"><img class="ticker__logo" src="assets/images/tech-logos/javascript.svg" alt="" width="44" height="44" loading="lazy"></div>
+            <div class="ticker__item"><img class="ticker__logo" src="assets/images/tech-logos/vue.svg" alt="" width="44" height="44" loading="lazy"></div>
+            <div class="ticker__item"><img class="ticker__logo" src="assets/images/tech-logos/python.svg" alt="" width="44" height="44" loading="lazy"></div>
+            <div class="ticker__item"><img class="ticker__logo" src="assets/images/tech-logos/tailwind.svg" alt="" width="44" height="44" loading="lazy"></div>
+            <div class="ticker__item"><img class="ticker__logo" src="assets/images/tech-logos/bootstrap.svg" alt="" width="44" height="44" loading="lazy"></div>
+            <div class="ticker__item"><img class="ticker__logo" src="assets/images/tech-logos/filament.svg" alt="" width="44" height="44" loading="lazy"></div>
+            <div class="ticker__item"><img class="ticker__logo" src="assets/images/tech-logos/postgresql.svg" alt="" width="44" height="44" loading="lazy"></div>
+            <div class="ticker__item"><img class="ticker__logo" src="assets/images/tech-logos/mysql.svg" alt="" width="44" height="44" loading="lazy"></div>
+            <div class="ticker__item"><img class="ticker__logo" src="assets/images/tech-logos/mariadb.svg" alt="" width="44" height="44" loading="lazy"></div>
+            <div class="ticker__item"><img class="ticker__logo" src="assets/images/tech-logos/mongodb.svg" alt="" width="44" height="44" loading="lazy"></div>
+            <div class="ticker__item"><img class="ticker__logo" src="assets/images/tech-logos/oracledb.svg" alt="" width="44" height="44" loading="lazy"></div>
+            <div class="ticker__item"><img class="ticker__logo" src="assets/images/tech-logos/html5.svg" alt="" width="44" height="44" loading="lazy"></div>
+            <div class="ticker__item"><img class="ticker__logo" src="assets/images/tech-logos/css3.svg" alt="" width="44" height="44" loading="lazy"></div>
+            <div class="ticker__item"><img class="ticker__logo" src="assets/images/tech-logos/wordpress.svg" alt="" width="44" height="44" loading="lazy"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ 2. ABOUT ============ -->
+      <section class="about" id="about" aria-labelledby="about-title">
+        <!-- Photo slot: drop your photo at assets/images/about-photo.jpg (portrait, 4:5 works best). -->
+        <figure class="photo photo--about">
+          <div class="photo__frame">
+            <img src="assets/images/about-me.png"
+                 onerror="this.onerror=null;this.src='assets/images/placeholder-about.svg';this.classList.add('is-placeholder')"
+                 alt="Prabath Sandeepa Rajapaksha" width="800" height="1000" loading="lazy">
+          </div>
+        </figure>
+
+        <div class="about__body">
+          <h2 class="h2" id="about-title">About</h2>
+          <p class="about__name"><span class="hl">Prabath Sandeepa</span> <span class="about__rest">Rajapaksha</span></p>
+
+          <div class="prose">
+            <p>I'm a software engineer and entrepreneur from Sri Lanka. I'm the Founder &amp; CEO of Fidex Developers (Pvt) Ltd, where we build websites, platforms and products for clients and for ourselves. I'm also the Founder &amp; CEO of Xenzura Entertainment, soon to become Xenzura Inc.</p>
+            <p>Day to day I write code, run infrastructure and manage projects, from Laravel back ends and Vue front ends to servers, networks and security.</p>
+            <p>I've completed Harvard University's CS50 course and built more than 50 projects, WordPress sites and custom platforms alike.</p>
+          </div>
+
+          <!-- CV: put your file at assets/cv/Prabath-Sandeepa-CV.pdf -->
+          <a class="btn" href="assets/cv/Prabath-Sandeepa-CV.pdf" download="Prabath-Sandeepa-CV.pdf">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0l-5-5m5 5l5-5M5 20h14"/></svg>
+            <span>Download my CV</span>
+          </a>
+        </div>
+      </section>
+
+      <!-- ============ 3. WHAT I'VE BUILT ============ -->
+      <section class="work" id="work" aria-labelledby="work-title">
+        <h2 class="h2" id="work-title">What I've built</h2>
+
+        <ul class="vlist">
+          <li class="venture">
+            <div class="venture__head">
+              <h3 class="venture__name">Fidex Developers</h3>
+              <p class="venture__role">Founder &amp; CEO</p>
+            </div>
+            <div class="venture__text">
+              <p>A Sri Lankan web and digital solutions company based in Gampaha. Bespoke websites and platforms for clients, plus products of its own.</p>
+              <p class="venture__links">
+                <a href="https://fidex.lk" target="_blank" rel="noopener noreferrer">
+                  <span>fidex.lk</span>
+                  <svg class="venture__link-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                </a>
+              </p>
+            </div>
+          </li>
+
+          <li class="venture">
+            <div class="venture__head">
+              <h3 class="venture__name">Shopio</h3>
+              <p class="venture__role">Senior Developer and Project Manager</p>
+            </div>
+            <div class="venture__text">
+              <p>A multi-tenant e-commerce platform built for the Sri Lankan market, in the spirit of Shopify. A Fidex Developers product.</p>
+              <p class="venture__links">
+                <a href="https://shopio.fidex.lk" target="_blank" rel="noopener noreferrer">
+                  <span>shopio.lk</span>
+                  <svg class="venture__link-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                </a>
+              </p>
+            </div>
+          </li>
+
+          <li class="venture">
+            <div class="venture__head">
+              <h3 class="venture__name">Xonmart</h3>
+              <p class="venture__role">Senior Developer</p>
+            </div>
+            <div class="venture__text">
+              <p>A multi-vendor gaming marketplace for trading game accounts, topups, and in-game items. A Fidex Developers product.</p>
+              <p class="venture__links">
+                <a href="https://xonmart.com" target="_blank" rel="noopener noreferrer">
+                  <span>xonmart.com</span>
+                  <svg class="venture__link-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                </a>
+              </p>
+            </div>
+          </li>
+
+          <li class="venture">
+            <div class="venture__head">
+              <h3 class="venture__name">AvraAPI</h3>
+              <p class="venture__role">Built and run solo</p>
+            </div>
+            <div class="venture__text">
+              <p>An advanced API gateway for developers. Coded, hosted, published and maintained by me, end to end.</p>
+              <p class="venture__links">
+                <a href="https://avraapi.com" target="_blank" rel="noopener noreferrer">
+                  <span>avraapi.com</span>
+                  <svg class="venture__link-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                </a>
+                <a href="https://docs.avraapi.com" target="_blank" rel="noopener noreferrer">
+                  <span>docs.avraapi.com</span>
+                  <svg class="venture__link-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                </a>
+              </p>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <!-- ============ 4. XENZURA (SEALED) ============ -->
+      <section class="secret" id="xenzura" aria-labelledby="vault-title">
+        <div class="vault" id="vault" role="button" tabindex="0" aria-describedby="vaultLive" aria-label="Xenzura. It's a secret. Activate to peek.">
+          <svg class="vault__lock" viewBox="0 0 24 24" aria-hidden="true">
+            <path class="shackle" d="M8 10V7a4 4 0 0 1 8 0v3"/>
+            <rect x="5" y="10" width="14" height="10" rx="2.5"/>
+            <circle cx="12" cy="15" r="1.4" class="keyhole"/>
+          </svg>
+
+          <h2 class="vault__title" id="vault-title">Xenzura</h2>
+          <p class="vault__sub">Founder &amp; CEO, Xenzura Entertainment. Soon Xenzura Inc.</p>
+
+          <div class="vault__bars" aria-hidden="true">
+            <span class="bar" style="--w:84%"></span>
+            <span class="bar" style="--w:61%"></span>
+            <span class="bar" style="--w:73%"></span>
+          </div>
+
+          <p class="vault__msg" id="vaultMsg" aria-hidden="true">It's a secret.</p>
+          <p class="vault__hint" aria-hidden="true">Tap to peek</p>
+          <span class="sr-only" id="vaultLive" aria-live="polite">It's a secret.</span>
+        </div>
+        <p class="secret__goal">The goal is simple: make it huge.</p>
+      </section>
+
+      <!-- ============ 5. NUMBERS ============ -->
+      <section class="numbers" aria-label="Projects in numbers">
+        <div class="num num--lead">
+          <p class="num__v xt"><span data-count="50">50</span>+</p>
+          <p class="num__l">projects built</p>
+        </div>
+        <div class="num">
+          <p class="num__v num__v--line"><span data-count="30">30</span>+</p>
+          <p class="num__l">WordPress websites</p>
+        </div>
+        <div class="num">
+          <p class="num__v num__v--line"><span data-count="20">20</span>+</p>
+          <p class="num__l">custom code projects</p>
+        </div>
+      </section>
+
+      <!-- ============ 6. EXPERTISE ============ -->
+      <section class="skills" id="skills" aria-labelledby="skills-title">
+        <h2 class="h2" id="skills-title">Expertise</h2>
+
+        <!-- Languages & Frameworks -->
+        <div class="skills__block">
+          <div class="skills__head">
+            <h3 class="skills__subtitle">Languages &amp; Frameworks</h3>
+            <span class="skills__counter">13 technologies</span>
+          </div>
+          <div class="tech-grid">
+            <div class="tech-card" style="--brand-glow: #ff2d20;">
+              <img src="assets/images/tech-logos/laravel.svg" alt="Laravel logo" class="tech-card__logo" width="48" height="48" loading="lazy">
+              <span class="tech-card__name">Laravel</span>
+              <span class="tech-card__tag">Full-Stack MVC</span>
+            </div>
+
+            <div class="tech-card" style="--brand-glow: #339933;">
+              <img src="assets/images/tech-logos/nodejs.svg" alt="Node.js logo" class="tech-card__logo" width="48" height="48" loading="lazy">
+              <span class="tech-card__name">Node.js</span>
+              <span class="tech-card__tag">Backend &amp; Runtime</span>
+            </div>
+
+            <div class="tech-card" style="--brand-glow: #777bb4;">
+              <img src="assets/images/tech-logos/php.svg" alt="PHP logo" class="tech-card__logo" width="48" height="48" loading="lazy">
+              <span class="tech-card__name">PHP</span>
+              <span class="tech-card__tag">Backend &amp; Core</span>
+            </div>
+
+            <div class="tech-card" style="--brand-glow: #02569b;">
+              <img src="assets/images/tech-logos/flutter.svg" alt="Flutter logo" class="tech-card__logo" width="48" height="48" loading="lazy">
+              <span class="tech-card__name">Flutter</span>
+              <span class="tech-card__tag">Cross-Platform UI</span>
+            </div>
+
+            <div class="tech-card" style="--brand-glow: #42b883;">
+              <img src="assets/images/tech-logos/vue.svg" alt="Vue.js logo" class="tech-card__logo" width="48" height="48" loading="lazy">
+              <span class="tech-card__name">Vue.js</span>
+              <span class="tech-card__tag">Reactive UI</span>
+            </div>
+
+            <div class="tech-card" style="--brand-glow: #f7df1e;">
+              <img src="assets/images/tech-logos/javascript.svg" alt="JavaScript logo" class="tech-card__logo" width="48" height="48" loading="lazy">
+              <span class="tech-card__name">JavaScript</span>
+              <span class="tech-card__tag">Modern ES6+</span>
+            </div>
+
+            <div class="tech-card" style="--brand-glow: #3776ab;">
+              <img src="assets/images/tech-logos/python.svg" alt="Python logo" class="tech-card__logo" width="48" height="48" loading="lazy">
+              <span class="tech-card__name">Python</span>
+              <span class="tech-card__tag">Scripting &amp; Logic</span>
+            </div>
+
+            <div class="tech-card" style="--brand-glow: #f59e0b;">
+              <img src="assets/images/tech-logos/filament.svg" alt="Filament logo" class="tech-card__logo" width="48" height="48" loading="lazy">
+              <span class="tech-card__name">Filament</span>
+              <span class="tech-card__tag">Admin &amp; TALL</span>
+            </div>
+
+            <div class="tech-card" style="--brand-glow: #06b6d4;">
+              <img src="assets/images/tech-logos/tailwind.svg" alt="Tailwind CSS logo" class="tech-card__logo" width="48" height="48" loading="lazy">
+              <span class="tech-card__name">Tailwind CSS</span>
+              <span class="tech-card__tag">Utility-First UI</span>
+            </div>
+
+            <div class="tech-card" style="--brand-glow: #7952b3;">
+              <img src="assets/images/tech-logos/bootstrap.svg" alt="Bootstrap logo" class="tech-card__logo" width="48" height="48" loading="lazy">
+              <span class="tech-card__name">Bootstrap</span>
+              <span class="tech-card__tag">Responsive UI</span>
+            </div>
+
+            <div class="tech-card" style="--brand-glow: #e34f26;">
+              <img src="assets/images/tech-logos/html5.svg" alt="HTML5 logo" class="tech-card__logo" width="48" height="48" loading="lazy">
+              <span class="tech-card__name">HTML5</span>
+              <span class="tech-card__tag">Semantic Web</span>
+            </div>
+
+            <div class="tech-card" style="--brand-glow: #1572b6;">
+              <img src="assets/images/tech-logos/css3.svg" alt="CSS3 logo" class="tech-card__logo" width="48" height="48" loading="lazy">
+              <span class="tech-card__name">CSS3</span>
+              <span class="tech-card__tag">Modern Styling</span>
+            </div>
+
+            <div class="tech-card" style="--brand-glow: #21759b;">
+              <img src="assets/images/tech-logos/wordpress.svg" alt="WordPress logo" class="tech-card__logo" width="48" height="48" loading="lazy">
+              <span class="tech-card__name">WordPress</span>
+              <span class="tech-card__tag">CMS Solutions</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Databases -->
+        <div class="skills__block">
+          <div class="skills__head">
+            <h3 class="skills__subtitle">Databases</h3>
+            <span class="skills__counter">5 systems</span>
+          </div>
+          <div class="tech-grid tech-grid--db">
+            <div class="tech-card" style="--brand-glow: #336791;">
+              <img src="assets/images/tech-logos/postgresql.svg" alt="PostgreSQL logo" class="tech-card__logo" width="48" height="48" loading="lazy">
+              <span class="tech-card__name">PostgreSQL</span>
+              <span class="tech-card__tag">Relational Database</span>
+            </div>
+
+            <div class="tech-card" style="--brand-glow: #00758f;">
+              <img src="assets/images/tech-logos/mysql.svg" alt="MySQL logo" class="tech-card__logo" width="48" height="48" loading="lazy">
+              <span class="tech-card__name">MySQL</span>
+              <span class="tech-card__tag">Relational Database</span>
+            </div>
+
+            <div class="tech-card" style="--brand-glow: #00a8a8;">
+              <img src="assets/images/tech-logos/mariadb.svg" alt="MariaDB logo" class="tech-card__logo" width="48" height="48" loading="lazy">
+              <span class="tech-card__name">MariaDB</span>
+              <span class="tech-card__tag">High-Performance SQL</span>
+            </div>
+
+            <div class="tech-card" style="--brand-glow: #13aa52;">
+              <img src="assets/images/tech-logos/mongodb.svg" alt="MongoDB logo" class="tech-card__logo" width="48" height="48" loading="lazy">
+              <span class="tech-card__name">MongoDB</span>
+              <span class="tech-card__tag">NoSQL Document DB</span>
+            </div>
+
+            <div class="tech-card" style="--brand-glow: #f80000;">
+              <img src="assets/images/tech-logos/oracledb.svg" alt="Oracle DB logo" class="tech-card__logo" width="48" height="48" loading="lazy">
+              <span class="tech-card__name">Oracle DB</span>
+              <span class="tech-card__tag">Enterprise RDBMS</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Disciplines & Leadership -->
+        <div class="skills__block">
+          <div class="skills__head">
+            <h3 class="skills__subtitle">Disciplines &amp; Leadership</h3>
+            <span class="skills__counter">8 core capabilities</span>
+          </div>
+          <div class="cap-grid">
+            <div class="cap-card">
+              <div class="cap-card__icon-wrap">
+                <svg class="cap-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+              </div>
+              <div class="cap-card__content">
+                <h4 class="cap-card__title">Software Development</h4>
+                <p class="cap-card__desc">Clean architecture, scalable codebases and robust back-end systems.</p>
+              </div>
+            </div>
+
+            <div class="cap-card">
+              <div class="cap-card__icon-wrap">
+                <svg class="cap-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+              </div>
+              <div class="cap-card__content">
+                <h4 class="cap-card__title">Website Development</h4>
+                <p class="cap-card__desc">High-performance client websites, bespoke portals and custom digital products.</p>
+              </div>
+            </div>
+
+            <div class="cap-card">
+              <div class="cap-card__icon-wrap">
+                <svg class="cap-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="2" width="14" height="20" rx="3"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+              </div>
+              <div class="cap-card__content">
+                <h4 class="cap-card__title">App Development</h4>
+                <p class="cap-card__desc">Responsive web applications, reactive interfaces and multi-tenant platforms.</p>
+              </div>
+            </div>
+
+            <div class="cap-card">
+              <div class="cap-card__icon-wrap">
+                <svg class="cap-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
+              </div>
+              <div class="cap-card__content">
+                <h4 class="cap-card__title">Network Administration</h4>
+                <p class="cap-card__desc">DNS configuration, server routing, domain orchestration and high availability.</p>
+              </div>
+            </div>
+
+            <div class="cap-card">
+              <div class="cap-card__icon-wrap">
+                <svg class="cap-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              </div>
+              <div class="cap-card__content">
+                <h4 class="cap-card__title">Cyber Security</h4>
+                <p class="cap-card__desc">Server hardening, vulnerability prevention, data privacy and secure credentials.</p>
+              </div>
+            </div>
+
+            <div class="cap-card">
+              <div class="cap-card__icon-wrap">
+                <svg class="cap-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"/></svg>
+              </div>
+              <div class="cap-card__content">
+                <h4 class="cap-card__title">Cloud Infrastructure</h4>
+                <p class="cap-card__desc">Linux server management, VPS deployments, containerization and scaling.</p>
+              </div>
+            </div>
+
+            <div class="cap-card">
+              <div class="cap-card__icon-wrap">
+                <svg class="cap-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+              </div>
+              <div class="cap-card__content">
+                <h4 class="cap-card__title">Business Management</h4>
+                <p class="cap-card__desc">Founder &amp; CEO operations, team leadership, client relations and venture growth.</p>
+              </div>
+            </div>
+
+            <div class="cap-card">
+              <div class="cap-card__icon-wrap">
+                <svg class="cap-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+              </div>
+              <div class="cap-card__content">
+                <h4 class="cap-card__title">Project Management</h4>
+                <p class="cap-card__desc">End-to-end delivery tracking, milestone execution and technical leadership.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ 7. CERTIFICATES ============ -->
+      <section class="certsec" id="certificates" aria-labelledby="certs-title">
+        <h2 class="h2" id="certs-title">Certificates</h2>
+        <p class="certsec__lead">Online learning programmes from the Centre for Open &amp; Distance Learning, University of Moratuwa. Tap one to open it and verify.</p>
+
+        <ul class="certs">
+          <li class="cert">
+            <button class="cert__open" type="button" aria-haspopup="dialog"
+                    data-title="Web Design for Beginners" data-code="n14SEskIjX"
+                    data-img="assets/certs/web-design-for-beginners.webp">
+              <span class="cert__paper"><img src="assets/certs/web-design-for-beginners.webp" alt="E-certificate: Web Design for Beginners, University of Moratuwa" width="1600" height="1131" loading="lazy"></span>
+              <span class="cert__meta"><strong>Web Design for Beginners</strong><small>University of Moratuwa</small></span>
+            </button>
+          </li>
+          <li class="cert">
+            <button class="cert__open" type="button" aria-haspopup="dialog"
+                    data-title="Front-End Web Development" data-code="KcBN5PYsCV"
+                    data-img="assets/certs/front-end-web-development.webp">
+              <span class="cert__paper"><img src="assets/certs/front-end-web-development.webp" alt="E-certificate: Front-End Web Development, University of Moratuwa" width="1600" height="1131" loading="lazy"></span>
+              <span class="cert__meta"><strong>Front-End Web Development</strong><small>University of Moratuwa</small></span>
+            </button>
+          </li>
+          <li class="cert">
+            <button class="cert__open" type="button" aria-haspopup="dialog"
+                    data-title="Server-side Web Programming" data-code="MDC314gTsg"
+                    data-img="assets/certs/server-side-web-programming.webp">
+              <span class="cert__paper"><img src="assets/certs/server-side-web-programming.webp" alt="E-certificate: Server-side Web Programming, University of Moratuwa" width="1600" height="1131" loading="lazy"></span>
+              <span class="cert__meta"><strong>Server-side Web Programming</strong><small>University of Moratuwa</small></span>
+            </button>
+          </li>
+        </ul>
+      </section>
+
+      <!-- ============ 8. CONTACT ============ -->
+      <section class="contact" id="contact" aria-labelledby="contact-title">
+        <h2 class="h2" id="contact-title">Get in touch</h2>
+        <p class="contact__lead">For projects, partnerships, or just to say hello.</p>
+
+        <a class="mail mail--xl" href="mailto:founder@fidex.lk">founder@fidex.lk</a>
+
+        <ul class="socials">
+          <li>
+            <a class="soc soc--linkedin" href="https://www.linkedin.com/in/prabath-sandeepa" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <span class="soc__face">
+                <span class="soc__fill"></span>
+                <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/></svg>
+              </span>
+              <span class="soc__tip">LinkedIn</span>
+            </a>
+          </li>
+          <li>
+            <a class="soc soc--github" href="https://github.com/sandeepa-rajapaksha" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <span class="soc__face">
+                <span class="soc__fill"></span>
+                <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+              </span>
+              <span class="soc__tip">GitHub</span>
+            </a>
+          </li>
+          <li>
+            <a class="soc soc--x" href="https://x.com/P_Sandeepa_lk" target="_blank" rel="noopener noreferrer" aria-label="X">
+              <span class="soc__face">
+                <span class="soc__fill"></span>
+                <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/></svg>
+              </span>
+              <span class="soc__tip">X</span>
+            </a>
+          </li>
+          <li>
+            <a class="soc soc--facebook" href="https://www.facebook.com/sandeepa.info/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+              <span class="soc__face">
+                <span class="soc__fill"></span>
+                <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/></svg>
+              </span>
+              <span class="soc__tip">Facebook</span>
+            </a>
+          </li>
+          <li>
+            <a class="soc soc--instagram" href="https://www.instagram.com/sandeepa.info/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <span class="soc__face">
+                <span class="soc__fill"></span>
+                <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/></svg>
+              </span>
+              <span class="soc__tip">Instagram</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+    </main>
+
+    <footer class="foot">
+      <small>&copy; <span id="year">2026</span> Prabath Sandeepa. All rights reserved.</small>
+    </footer>
+  </div>
+
+  <!-- Certificate viewer -->
+  <dialog class="dlg" id="certDialog" aria-labelledby="certTitle">
+    <div class="dlg__card">
+      <button class="dlg__close" id="certClose" type="button" aria-label="Close">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+      <img id="certImg" src="" alt="" width="1600" height="1131">
+      <div class="dlg__meta">
+        <div>
+          <p class="dlg__title" id="certTitle"></p>
+          <p class="dlg__code">Verification code: <span id="certCode"></span></p>
+        </div>
+        <a class="dlg__verify" href="https://open.uom.lk/verify" target="_blank" rel="noopener noreferrer">Verify at open.uom.lk</a>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- Impact effects (shockwaves, flash) are drawn here by js/main.js -->
+  <div class="fx" id="fx" aria-hidden="true"></div>
+
+</body>
+</html>
